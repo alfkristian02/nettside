@@ -1,3 +1,5 @@
+import { lightBlue } from '@mui/material/colors';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -5,7 +7,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'lightBlue' : '#B1D4E0'
+      }
+    },
   },
   plugins: [],
 }
