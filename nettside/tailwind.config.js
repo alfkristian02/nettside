@@ -9,8 +9,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        'lightBlue' : '#B1D4E0'
       }
+    },
+    fontFamily: {
     },
   },
   plugins: [],
