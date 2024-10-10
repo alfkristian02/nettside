@@ -1,4 +1,4 @@
-function random() {
+function home() {
     return (
         <>
             <h1>Home</h1>
@@ -6,4 +6,4 @@ function random() {
     )
 }
 
-export default random
+export default home

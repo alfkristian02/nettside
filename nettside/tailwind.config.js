@@ -9,6 +9,8 @@ export default {
   theme: {
     extend: {
       colors: {
+        site_background : '#ECE5DE',
+        site_red : '#9D5364',
       }
     },
     fontFamily: {
