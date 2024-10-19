@@ -34,20 +34,21 @@ function navbar() {
                     <NavLink 
                     to="/" 
                     className={({ isActive }) => isActive ? "text-white bg-site_red rounded-l-full border-r-2 border-black p-2 w-36" : "rounded-l-full border-r-2 border-site_background p-2 w-36"}>
-                        <span className="text-2xl p-6">Home</span>
+                        <p className="text-2xl">Hjem</p>
                     </NavLink>
 
                     <NavLink 
                     to="/projects" 
                     className={({ isActive }) => isActive ? "text-white bg-site_red border-l-2 border-r-2 border-black p-2 w-36" : "border-l-2 border-r-2 border-site_backround p-2 w-36"}>
-                        <span className="text-2xl p-6 w-12">Projects</span>
+                        <p className="text-2xl">Prosjekter</p>
                     </NavLink>   
 
                     <NavLink 
                     to="/random" 
                     className={({ isActive }) => isActive ? "text-white bg-site_red rounded-r-full border-l-2 border-black p-2 w-36" : "rounded-r-full border-l-2 border-site_background p-2 w-36"}>
-                        <span className="text-2xl p-6 w-12">Random</span>
+                        <p className="text-2xl">Tilfeldig</p>
                     </NavLink>
+
                 </div>
             </div>
         </>

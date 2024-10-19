@@ -1,7 +1,12 @@
+import TicTacToe from '../components/TicTacToe.tsx'
+
 function random() {
     return (
         <>
-            <h1>Random</h1>
+            <h2 className="text-4xl mt-14 text-center">Tilfeldig:</h2>
+
+            <TicTacToe />
+
         </>
     )
 }
