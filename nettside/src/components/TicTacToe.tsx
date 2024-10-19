@@ -1,7 +1,7 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 function tictactoe() {
 
-    const [boardState, setBoardState] = useState(0)
+    // const [boardState, setBoardState] = useState(0)
 
     // Shouldnt need turn as the change triggers at once
     // const [turn, setturn] = useState(0)
