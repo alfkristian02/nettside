@@ -9,8 +9,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        'lightBlue' : '#B1D4E0'
+        site_background : '#ECE5DE',
+        site_red : '#9D5364',
+        cards_background : "#DFD2D0",
       }
+    },
+    fontFamily: {
     },
   },
   plugins: [],

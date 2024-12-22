@@ -1,11 +1,13 @@
-# Link
-https://alfkristianhelle.no
+# Link to the GitHub repository
+https://github.com/alfkristian02/nettside
 
-# Webpage
+# Deployed project
+- https://alfkristianhelle.no
 
-Project built using Vite
+# Initialization
 
-# Run project
-- cd nettside
+Project initialized using Vite
+
+# Run project locally
 - npm install
 - npm run dev
