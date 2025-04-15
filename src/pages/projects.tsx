@@ -20,20 +20,22 @@ function projects() {
     ]
 
     const projects_cards = projects_info.map(info => (
-        <div className="w-1/3 py-2 bg-cards_background rounded-md mx-2">
-            <h3 className="text-center font-normal text-2xl">{info.title}</h3>
-            <p className="text-center mt-2">Tecknologies: {info.technologies}</p>
-            <p className="text-center mt-2 ">GitHub: <a className="font-medium text-blue-600 dark:text-blue-500 hover:underline" href={info.github}>Link</a></p>
-            <img className="m-auto h-32 my-4" src={info.picture}/>
+        <div className="w-full sm:w-1/3 py-2 ">
+            <div className="bg-cards_background rounded-md m-3 p-2">
+                <h3 className="text-center font-normal text-2xl">{info.title}</h3>
+                <p className="text-center mt-2">Teknologier: {info.technologies}</p>
+                <img className="m-auto h-32 px-2 my-4" src={info.picture}/>
+                <p className="text-center mt-2 ">GitHub: <a className="font-medium text-blue-600 dark:text-blue-500 hover:underline" href={info.github}>Link</a></p>
+            </div>
         </div>
     ));
 
     return (
         <>
         <div className="w-full">  {/* container */}
-            <h2 className="text-4xl mt-14 text-center">Prosjekter:</h2>
+            <h2 className="text-3xl sm:text-4xl mt-14 text-center">Prosjekter:</h2>
 
-            <div className="w-[60vw] mx-auto mt-4 flex"> {/* content */}
+            <div className="w-full sm:w-[60vw] mx-auto mt-4 flex flex-wrap"> {/* content */}
                 {projects_cards}
             </div>
         </div>

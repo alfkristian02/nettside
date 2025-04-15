@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 
 function navbar() {
-    const baseStyles = "p-2 text-center text-[20px] sm:text-2xl text-bold border-black w-28 sm:w-36";
+    const baseStyles = "p-2 text-center text-[20px] sm:text-2xl border-black w-28 sm:w-36";
     const activeStyles = "text-white bg-site_red";
     const inactiveStyles = "border-site_background";
 
