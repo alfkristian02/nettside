@@ -1,31 +1,10 @@
 import { NavLink } from 'react-router-dom'
 
 function navbar() {
-    
-    // const navInfo = [
-    //     {
-    //         name: "Home",
-    //         url: "/"
-    //     },
-    //     {
-    //         name: "Projects",
-    //         url: "/projects"
-    //     },
-    //     {
-    //         name: "Random",
-    //         url: "/random"
-    //     }
-    // ]
+    const baseStyles = "p-2 text-center text-[20px] sm:text-2xl text-bold border-black w-28 sm:w-36";
+    const activeStyles = "text-white bg-site_red";
+    const inactiveStyles = "border-site_background";
 
-    // const navItems = navInfo.map(navItem => <NavLink
-    //     to={navItem.url}
-    //     key={navItem.name}
-    //     className= {({ isActive }) => isActive ? "underline" : "px-2 text-2xl"}
-    //     >
-    //     {navItem.name}
-    //     </NavLink>
-    // )
-    
     return (
         <>
             <div className="flex mt-16">
@@ -33,20 +12,26 @@ function navbar() {
 
                     <NavLink 
                     to="/" 
-                    className={({ isActive }) => isActive ? "text-white bg-site_red rounded-l-full border-r-2 border-black p-2 w-36" : "rounded-l-full border-r-2 border-site_background p-2 w-36"}>
-                        <p className="text-2xl">Hjem</p>
+                    className={({ isActive }) => 
+                        `${baseStyles} ${isActive ? `${activeStyles} rounded-l-full border-r-2` : `rounded-l-full border-r-2 ${inactiveStyles}`}`
+                    }>
+                        <p>Hjem</p>
                     </NavLink>
 
                     <NavLink 
                     to="/projects" 
-                    className={({ isActive }) => isActive ? "text-white bg-site_red border-l-2 border-r-2 border-black p-2 w-36" : "border-l-2 border-r-2 border-site_backround p-2 w-36"}>
-                        <p className="text-2xl">Prosjekter</p>
+                    className={({ isActive }) => 
+                        `${baseStyles} ${isActive ? `${activeStyles} border-l-2 border-r-2` : `border-l-2 border-r-2 ${inactiveStyles}`}`
+                    }>
+                        <p>Prosjekter</p>
                     </NavLink>   
 
                     <NavLink 
                     to="/random" 
-                    className={({ isActive }) => isActive ? "text-white bg-site_red rounded-r-full border-l-2 border-black p-2 w-36" : "rounded-r-full border-l-2 border-site_background p-2 w-36"}>
-                        <p className="text-2xl">Tilfeldig</p>
+                    className={({ isActive }) => 
+                        `${baseStyles} ${isActive ? `${activeStyles} rounded-r-full border-l-2` : `rounded-r-full border-l-2 ${inactiveStyles}`}`
+                    }>
+                        <p>Tilfeldig</p>
                     </NavLink>
 
                 </div>
