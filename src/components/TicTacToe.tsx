@@ -74,7 +74,7 @@ function TicTacToe() {
 
     return (
         <div className="text-center mt-14 relative">
-            <h2 className="text-3xl sm:text-4xl mb-6">Tic Tac Toe</h2>
+            <h2 className="text-3xl sm:text-4xl mb-6">Tripp trapp tresko:</h2>
             <div className="relative flex flex-wrap w-[80vw] h-[80vw] sm:w-[20vw] sm:h-[20vw] mx-auto">
                 {board.map((cell, index) => (
                     <div
@@ -90,13 +90,17 @@ function TicTacToe() {
                 {winner && (
                     <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center">
                         <p className="text-2xl sm:text-3xl text-white">
-                            {winner === 'Draw' ? 'It\'s a Draw!' : `${winner} Wins!`}
+                            {winner === 'Draw'
+                                ? 'Uavgjort!'
+                                : winner === 'X'
+                                ? 'Du vinner!'
+                                : 'Du taper!'}
                         </p>
                         <button
                             className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
                             onClick={resetGame}
                         >
-                            Play Again
+                            Spill på nytt
                         </button>
                     </div>
                 )}
